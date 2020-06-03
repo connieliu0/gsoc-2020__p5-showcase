@@ -40,3 +40,7 @@ Documentation conclusion:
     - supporting media?
 - everything else, especially q and a, can't be automated/must be proofread
 
+# Possible Revised Goals
+- add 8 more new showcase projects
+- attempt to do filter
+- scripting
