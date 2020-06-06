@@ -1,4 +1,4 @@
-# Week Objective - May26
+# Week Objective - June 3
 - Take a look at: https://experiments.withgoogle.com/ 
 - Do a proof of concept showcasing the process of csv > yaml > html page
 - You can explore p5.js loadTable()
@@ -139,3 +139,7 @@ sample handlebars page
 - stick with idea 3 and move on?
 - think about creating external website-prototype with figma
 - do a prototype of what a new github pages site would look like using mongodb for database storage
+
+# # Goals
+- How to add in showcase files in md to showcase
+- update the UI
