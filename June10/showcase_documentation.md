@@ -62,7 +62,7 @@ How the YAML works in conjunction with handlebars is basically that the content 
 
 Then these handlebars files are assembled into a HTML page with the value (orange in the YAML file).
 
-**YAML File:**
+**YAML File (key in blue, value in orange):**
 
 ![](images/ex1.1.png)
 
@@ -101,7 +101,8 @@ In conjunction with this step in the YAML file, add the necessary key value pair
 - Name project images are named firstname-lastname_projectName.jpg added to [p5.js-website>src>assets>img>showcase](https://github.com/processing/p5.js-website/tree/master/src/assets/img/showcase)
 - In index.hbs and creatorFirstName-lastName.hbs, the image tag includes the {{assets}}/img/showcase/creatorFirstName-lastName.jpg/png/other image file extension, followed by an alt="image description" attribute.
 - The alt image descriptions are necessary for accessibility/a11y because that's what screen readers scan. Here's a good guide by [Shannon Finnegan](https://www.eyebeam.org/alt-text-as-poetry/) and [Sina Bahram](https://pac.bz/projects/the-coyote-project/).
-- **For Example**: [line 29 of index.hbs](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/showcase/index.hbs#L29)
+**For Example**: [line 29 of index.hbs](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/showcase/index.hbs#L29)
+
 ```
 {{assets}}/img/showcase/roni-cantor/roni-cantor_plotter-white.jpg" alt="A drawing of a sine wave lerp plotted on black paper using an AxiDraw V3 and a white gel pen.">
 ```
@@ -111,7 +112,7 @@ In conjunction with this step in the YAML file, add the necessary key value pair
 
     {{#i18n "variable-name"}}{{/i18n}}
 
-- Each "variable-name" must be unique and is defined after line 689 in "en.yml", "es.yml", and "zh-Hans.yml".
+- Each "variable-name" must be **unique** and is defined after line 689 in "en.yml", "es.yml", and "zh-Hans.yml".
 
 - You must make sure the variables are defined on the same line across all 3 files, there will be errors otherwise. Since translations can be contributed later, you can use the English version as placeholder text in the other .yml files for now.
 
