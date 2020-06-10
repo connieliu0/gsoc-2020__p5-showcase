@@ -1,9 +1,9 @@
 # Week Objective - June 10
 - [x] documentation
-- [] documentation feedback
-- [] YAML->JSON
-- [] UI
-- [] Archive thoughts
+- [x] documentation feedback
+- [x] YAML->JSON
+- [x] UI
+- [x] Archive thoughts
 - [] Update the website
 
 ## Documentation
@@ -30,7 +30,7 @@ A video of someone adding a new entry?
 - I'm confused how to load json remotely
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 most tutorials use an external html, and a video I watched said you needed a server like grunt or something to bring it in
-- I'm confused how to link fetch to json path?? bc the api says url...
+- I'm confused how to link fetch to json path?? bc the api says url..., so for now I just put it in a variable in the javascript
 
 ## UI Changes
 proposed changes below:
