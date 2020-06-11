@@ -3,7 +3,7 @@
 The p5.js [showcase](https://p5js.org/showcase/) can be maintained in the following way. Currently, contributors can nominate themselves through this [form](https://docs.google.com/forms/d/e/1FAIpQLSdY76NtZaVqpGi-g6wKvhbnlqC3GhCl2TAJ5vgMN-CyStIItQ/viewform?usp=send_form) which is a apart of the p5.js google drive. If you wish to be the maintainer/co-maintainer for the showcase for the year, please email (insert email here) for further directions and access to the form results.
 
 The current maintainer is: (insert name)
-Past maintainers: (insert names), please contact them if you hav equestions!
+Past maintainers: (insert names), please contact them if you have questions!
 
 The showcase information is hard coded in, that being said there is information that cannot be gained strictly from the form. The maintainer should email the nominee and have a q and a with them, which will also include getting any more relevant project links.
 
@@ -25,7 +25,8 @@ The showcase information is hard coded in, that being said there is information 
 
 ## Setting up the Repo
 Before adding to the p5.js showcase, make sure to follow the directions [here](https://github.com/processing/p5.js-website) which demonstrates how to copy the github repository to your machine. The git repository is the file makeup of the p5js website, so it includes all the handlebars files, css, html, yaml, json, GRUNT workers and everything that is used to construct it. 
-In order to clone a git repo, make sure to open up terminal on your machine. To learn how to access files via terminal, view [this](https://www.dummies.com/computers/macs/mac-operating-systems/how-to-use-basic-unix-commands-to-work-in-terminal-on-your-mac/). If you don't have a mac, you can access the terminal via windows [here](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab).
+In order to clone a git repo, make sure to open up terminal on your machine. To learn how to access files via terminal, view [this](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). If you don't have a mac, you can access the terminal via windows [here](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab).
+
 To edit the files you can use the code editor of your choice, for this tutorial I'm using Microsoft [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Overall understanding of the structure
@@ -75,10 +76,12 @@ Then these handlebars files are assembled into a HTML page with the value (orang
 
 2. Within that handlebars file, copy and paste the structure of other handlebars files
 
-3. In index.hbs, add in a reference to the new handlebars file for that creator, do this in either the div left column or right column, the reference consists of an image, description, and title as seen by the html code below.
+3. In index.hbs, add in a reference to the new handlebars file for that creator, do this in either div class="left-column" or div class = "right-column", the reference consists of an image, description, and title as seen by the html code below.
 Replace all the parts that say creator name with creator's first and last name in the structure "firstname-lastname", **for example** for someone named John Smith it would be project-john-smith.
 
+The new entry as seen below:
 ```
+<div>
 <h3 class="title"><a href="./featuring/creatorname.html">{{#i18n "project-creatorname"}}{{/i18n}}</a></h3>
         <p class="credit">{{#i18n "credit-creatorname"}}{{/i18n}}</p>
         <a href="./featuring/creatorname.html" class="no-arrow-link">
@@ -90,7 +93,10 @@ Replace all the parts that say creator name with creator's first and last name i
         <li><span class="tag">{{#i18n "project-tag-art"}}{{/i18n}}</span></li>
         <li><span class="tag">{{#i18n "project-tag-design"}}{{/i18n}}</span></li>
         </ul>
+</div>
 ```
+![](images/showcaseentry.png)
+
 
 In conjunction with this step in the YAML file, add the necessary key value pairs under showcase.
 **For example** for John Smith's Example Project it would be
