@@ -7,6 +7,8 @@ Past maintainers: (insert names), please contact them if you have questions!
 
 The showcase information is hard coded in, that being said there is information that cannot be gained strictly from the form. The maintainer should email the nominee and have a q and a with them, which will also include getting any more relevant project links.
 
+NOTE: There should be a general understanding in HTML and CSS and using Github via the Terminal before following this tutorial.
+
 **The standard questions asked typically are:**
 - What are you up to? 
 - How did you use p5.js in this project? 
@@ -79,7 +81,7 @@ Then these handlebars files are assembled into a HTML page with the value (orang
 3. In index.hbs, add in a reference to the new handlebars file for that creator, do this in either div class="left-column" or div class = "right-column", the reference consists of an image, description, and title as seen by the html code below.
 Replace all the parts that say creator name with creator's first and last name in the structure "firstname-lastname", **for example** for someone named John Smith it would be project-john-smith.
 
-The new entry as seen below:
+The general code for a new entry is seen below:
 ```
 <div>
 <h3 class="title"><a href="./featuring/creatorname.html">{{#i18n "project-creatorname"}}{{/i18n}}</a></h3>
@@ -95,6 +97,7 @@ The new entry as seen below:
         </ul>
 </div>
 ```
+Below, the dotted line is around what a singular showcase entry is
 ![](images/showcaseentry.png)
 
 
