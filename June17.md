@@ -22,6 +22,7 @@ Current Projects as they fit under "categories":
   - Programmed Plotter drawings
   - Chillin
 - tool?
+Should we consolidate art/design into -> visual and writing?
 
 Proposal consolidate tool into code? Because a lot of software heavy projects are also tools.
 
@@ -52,6 +53,9 @@ I've attached the Google Form below required to submit to the Showcase and will 
 Let me know if you have any questions or concerns!
 Yours,
 Connie
+
+# # Sample Flyer
+https://www.figma.com/file/Ym32EUY2S3z9DCTahMgpRc/Figma-Showcase?node-id=45%3A14
 
 # # Form revamp?
 https://forms.gle/VKdZgeXUsaX2MG6P8
